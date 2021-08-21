@@ -25,7 +25,7 @@ export const App: React.FC<Record<string, never>> = () => {
             <ArrowBtn
               linkUrl="www.google.com"
               content="External linkage"
-              className="me-2"
+              className="bg-light me-2"
               color="#05758f"
               isExternal
             />

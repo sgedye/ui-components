@@ -127,10 +127,10 @@ const InternalLink = styled(Link)<{ color: string; border: boolean }>`
   color: ${(p) => p.color};
   border: 2px solid;
   border-color: ${(p) => (p.border ? p.color : "transparent")};
-  transition: filter 100ms ease-out;
+  transition: filter 500ms ease-out;
   & .circle {
     stroke-dasharray: 94.96917724609375;
-    transition: all 200ms ease-out;
+    transition: all 500ms ease-out;
   }
   & .button-line {
     fill: none;
@@ -147,7 +147,7 @@ const InternalLink = styled(Link)<{ color: string; border: boolean }>`
       stroke-dashoffset: 189.93835;
     }
     .arrow {
-      animation: ${shootArrow(false)} 200ms ease-in-out;
+      animation: ${shootArrow(false)} 500ms ease-in-out;
     }
   }
 `;
@@ -156,10 +156,10 @@ const ExternalLink = styled.a<{ color: string; border: boolean }>`
   color: ${(p) => p.color};
   border: 2px solid;
   border-color: ${(p) => (p.border ? p.color : "transparent")};
-  transition: filter 100ms ease-out;
+  transition: filter 500ms ease-out;
   & .circle {
     stroke-dasharray: 94.96917724609375;
-    transition: all 200ms ease-out;
+    transition: all 500ms ease-out;
   }
   & .button-line {
     fill: none;
@@ -179,7 +179,7 @@ const ExternalLink = styled.a<{ color: string; border: boolean }>`
       stroke-dashoffset: 189.93835;
     }
     .arrow {
-      animation: ${shootArrow(true)} 200ms ease-in-out;
+      animation: ${shootArrow(true)} 500ms ease-in-out;
     }
   }
 `;
