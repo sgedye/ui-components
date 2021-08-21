@@ -1,5 +1,6 @@
 import { Images } from "./components";
-import { Header, Footer } from "./ui";
+import { Header, Footer, ArrowBtn } from "./ui";
+import { BrowserRouter } from "react-router-dom";
 
 export const App: React.FC<Record<string, never>> = () => {
   return (
@@ -14,6 +15,27 @@ export const App: React.FC<Record<string, never>> = () => {
             className="form-control mb-3"
             placeholder="Hot reload remembers state"
           />
+          <BrowserRouter>
+            <ArrowBtn
+              linkUrl="/test"
+              content="Internal Link"
+              className="me-2"
+              border
+            />
+            <ArrowBtn
+              linkUrl="www.google.com"
+              content="External linkage"
+              className="me-2"
+              color="#05758f"
+              isExternal
+            />
+            <ArrowBtn
+              linkUrl="www.google.com"
+              content="External linkage"
+              color="green"
+              border
+            />
+          </BrowserRouter>
         </div>
       </main>
       <Footer />

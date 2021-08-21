@@ -9,8 +9,8 @@ export const Images: React.FC<Record<string, never>> = () => {
         <img
           src={jpgImage}
           alt="JPG img"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           className="img-fluid"
         />
       </div>
@@ -18,8 +18,8 @@ export const Images: React.FC<Record<string, never>> = () => {
         <img
           src={pngImage}
           alt="PNG img"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           className="img-fluid"
         />
       </div>
@@ -27,8 +27,8 @@ export const Images: React.FC<Record<string, never>> = () => {
         <img
           src={webpImage}
           alt="WEBP img"
-          width={300}
-          height={300}
+          width={200}
+          height={200}
           className="img-fluid"
         />
       </div>
