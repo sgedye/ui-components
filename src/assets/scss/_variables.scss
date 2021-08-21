@@ -1,0 +1,214 @@
+// Boilerplate Custom Theme
+//
+
+// Color system
+$white: #fff;
+$gray-100: #f8f9fa;
+$gray-200: #e9ecef;
+$gray-300: #dee2e6;
+$gray-400: #ced4da;
+$gray-500: #adb5bd;
+$gray-600: #6c757d;
+$gray-700: #495057;
+$gray-800: #343a40;
+$gray-900: #212529;
+$black: #000;
+
+$grays: ();
+$grays: map-merge(
+  (
+    "100": $gray-100,
+    "200": $gray-200,
+    "300": $gray-300,
+    "400": $gray-400,
+    "500": $gray-500,
+    "600": $gray-600,
+    "700": $gray-700,
+    "800": $gray-800,
+    "900": $gray-900,
+  ),
+  $grays
+);
+
+$blue: #01426a;
+$indigo: #5848c4;
+$purple: #861d8a;
+$pink: #e83e8c;
+$red: #eb4d4b;
+$orange: #f0932b;
+$yellow: #f9ca24;
+$green: #6ab04c;
+$teal: #20c997;
+$cyan: #22a6b3;
+
+$colors: ();
+$colors: map-merge(
+  (
+    "blue": $blue,
+    "indigo": $indigo,
+    "purple": $purple,
+    "pink": $pink,
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "teal": $teal,
+    "cyan": $cyan,
+    "white": $white,
+    "gray": $gray-600,
+    "gray-dark": $gray-800,
+  ),
+  $colors
+);
+
+$primary: $blue;
+$secondary: $gray-600;
+$success: $green;
+$info: $cyan;
+$warning: $orange;
+$danger: $red;
+$light: $gray-100;
+$dark: $gray-800;
+
+$theme-colors: ();
+$theme-colors: map-merge(
+  (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "light": $light,
+    "dark": $dark,
+  ),
+  $theme-colors
+);
+
+// Options
+$enable-responsive-font-sizes: true;
+
+// Spacing
+$spacer: 1rem !default;
+$spacers: () !default;
+$spacers: map-merge(
+  (
+    0: 0,
+    1: $spacer * 0.25,
+    2: $spacer * 0.5,
+    3: $spacer,
+    4: $spacer * 1.5,
+    5: $spacer * 3,
+    6: $spacer * 6,
+    7: $spacer * 12,
+  ),
+  $spacers
+);
+
+$grid-gutter-width: 2rem;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1300px,
+);
+
+// Grid containers
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1240px,
+);
+
+// Components
+$border-color: $gray-400;
+
+// Typography
+$font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-display: Arbuz, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-serif: Orev, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+  "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+$font-family-base: $font-family-sans-serif !default;
+
+$font-size-base: 1rem !default;
+$font-size-lg: $font-size-base * 1.25 !default;
+$font-size-sm: $font-size-base * 0.875 !default;
+
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$display1-size: 6rem;
+$display2-size: 5.5rem;
+$display3-size: 4.5rem;
+$display4-size: 3.5rem;
+
+$display1-weight: $font-weight-normal;
+$display2-weight: $font-weight-normal;
+$display3-weight: $font-weight-normal;
+$display4-weight: $font-weight-normal;
+
+$headings-font-family: $font-family-serif;
+$headings-font-weight: $font-weight-bold;
+
+$h1-font-size: $font-size-base * 2.5;
+$h2-font-size: $font-size-base * 2;
+$h3-font-size: $font-size-base * 1.75;
+$h4-font-size: $font-size-base * 1.5;
+$h5-font-size: $font-size-base * 1.25;
+$h6-font-size: $font-size-base;
+
+$lead-font-size: $font-size-base * 1.25;
+$lead-font-weight: $font-weight-normal;
+
+$line-height-base: 1.5 !default;
+
+// Links
+$link-color: #007bff;
+
+// Buttons
+$btn-padding-y: 0.5rem;
+$btn-padding-x: 1.875rem;
+$btn-font-family: $font-family-serif;
+$btn-font-size: $font-size-base * 1.125;
+
+$btn-padding-y-sm: 0.25rem;
+$btn-padding-x-sm: 1.25rem;
+$btn-font-size-sm: $font-size-base;
+
+$btn-padding-y-lg: 0.8125rem;
+$btn-padding-x-lg: 2.5rem;
+$btn-font-size-lg: $font-size-base * 1.25;
+
+$btn-font-weight: $font-weight-bold;
+
+$btn-border-radius: 2rem;
+$btn-border-radius-lg: 2rem;
+$btn-border-radius-sm: 2rem;
+
+// Navbar
+$navbar-nav-link-padding-x: 1rem;
+$navbar-brand-font-size: $font-size-lg !default;
+$navbar-brand-height: $navbar-brand-font-size * $line-height-base !default;
+$navbar-brand-padding-y: 0;
+
+$navbar-toggler-font-size: $font-size-base;
+
+$navbar-light-color: $primary;
+$navbar-light-hover-color: darken($primary, 5);
+$navbar-light-active-color: $primary;
+$navbar-light-disabled-color: lighten($primary, 30);
+$navbar-light-toggler-border-color: transparent;
+
+$navbar-dark-color: $white;
+$navbar-dark-hover-color: rgba($white, 0.75);
+$navbar-dark-active-color: $white;
+$navbar-dark-disabled-color: rgba($white, 0.25);
